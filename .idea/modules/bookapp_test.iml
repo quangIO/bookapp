@@ -40,7 +40,10 @@
     <orderEntry type="library" name="Gradle: io.vertx:vertx-lang-kotlin-coroutines:3.5.3" level="project" />
     <orderEntry type="library" name="Gradle: io.vertx:vertx-auth-common:3.5.3" level="project" />
     <orderEntry type="library" name="Gradle: io.vertx:vertx-core:3.5.3" level="project" />
-    <orderEntry type="library" name="Gradle: org.hsqldb:hsqldb:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.h2database:h2:1.4.197" level="project" />
+    <orderEntry type="library" name="Gradle: org.postgresql:postgresql:42.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:3.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.exposed:exposed:0.10.2" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-http2:4.1.19.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.19.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-handler-proxy:4.1.19.Final" level="project" />
@@ -58,6 +61,9 @@
     <orderEntry type="library" name="Gradle: io.vertx:vertx-bridge-common:3.5.3" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.20" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:0.21.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.2.30" level="project" />
+    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9.9" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.20" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.20" level="project" />

@@ -20,6 +20,7 @@ apply plugin: 'com.github.johnrengelman.shadow'
 
 repositories {
   mavenCentral()
+  maven { url "https://dl.bintray.com/kotlin/exposed/" }
 }
 
 version = '0.0.1-SNAPSHOT'
@@ -28,13 +29,21 @@ sourceCompatibility = '1.8'
 mainClassName = 'io.vertx.core.Launcher'
 
 dependencies {
-  // TODO use compileOnly instead compile for codegen
-  compile 'io.vertx:vertx-core'
-  compile 'io.vertx:vertx-web'
-  // TODO use compileOnly instead compile for codegen
-  compile 'io.vertx:vertx-lang-kotlin'
-  compile 'org.hsqldb:hsqldb:2.4.1'
-  compile 'io.vertx:vertx-lang-kotlin-coroutines'
+  // TODO use compileOnly instead implementation for codegen
+  implementation 'io.vertx:vertx-core'
+  implementation 'io.vertx:vertx-web'
+  // TODO use compileOnly instead implementation for codegen
+  implementation 'io.vertx:vertx-lang-kotlin'
+  // https://mvnrepository.com/artifact/com.h2database/h2
+  implementation'com.h2database:h2:1.4.197'
+  implementation 'io.vertx:vertx-lang-kotlin-coroutines'
+  implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
+  implementation 'com.zaxxer:HikariCP:3.2.0'
+  implementation ('org.jetbrains.exposed:exposed:0.10.2'){
+    exclude(module: 'log4j')
+    exclude(module: 'slf4j-log4j12')
+    exclude(module: 'kotlin-stdlib')
+  }
 }
 
 vertx {
